@@ -16,7 +16,6 @@ class Dragon {
             this.hungry = false;
         }
     }
-
 }
 
 module.exports = Dragon;
