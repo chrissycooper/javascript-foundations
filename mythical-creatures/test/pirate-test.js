@@ -3,13 +3,13 @@ var Pirate = require('../exercises/pirate');
 
 describe('Pirate', function() {
 
-  it.skip('should instantiate our good friend, Pirate', function() {
+  it('should instantiate our good friend, Pirate', function() {
     var dreadPirateRoberts = new Pirate();
 
     assert.instanceOf(dreadPirateRoberts, Pirate);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var blackbeard = new Pirate('Blackbeard');
     var chengISao = new Pirate('Cheng I Sao');
 
@@ -17,7 +17,7 @@ describe('Pirate', function() {
     assert.equal(chengISao.name, 'Cheng I Sao');
   });
 
-  it.skip('should be a scallywag by default', function() {
+  it('should be a scallywag by default', function() {
     var pirate = new Pirate('Anne Bonny');
 
     assert.equal(pirate.name, 'Anne Bonny');
