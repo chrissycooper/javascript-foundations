@@ -8,11 +8,16 @@ class Medusa {
     }
 
     gazeAtVictim(victim) {
-        //take person class and make them a statue before adding them to an array?
-        //adding that victim to the statues array
-        //get the length of medusa.statues
-        var newStatue = new Statue(victim.name);
-        this.statues.push(newStatue);
+        if (this.statues.length < 3) {
+            var newStatue = new Statue(victim.name);
+            this.statues.push(newStatue);
+        } else if (this.statues.length === 3) {
+            var newPerson = this.statues[0];
+            this.statues.splice(0, 1);
+            var newStatue = new Statue(victim.name);
+            this.statues.push(newStatue);
+            return new Person(newPerson.name, 'relieved');
+        }
     }
 };
 
