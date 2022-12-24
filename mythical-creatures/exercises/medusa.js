@@ -19,6 +19,7 @@ class Medusa {
             return new Person(newPerson.name, 'relieved');
         }
     }
-};
+}
+
 
 module.exports = Medusa;
