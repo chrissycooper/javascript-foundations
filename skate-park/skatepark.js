@@ -17,7 +17,6 @@ class SkatePark {
             if (skaterObj.money >= this.cost){
                 skaterObj.money -= this.cost;
                 this.occupants.push(skaterObj);
-                // console.log(this.occupants)
                 return `Welcome to ${this.name}, the cost will be $${this.cost}.00.`;
             } else if (skaterObj.money < this.cost) {
                 return `Sorry, you don't have enough money.`;
