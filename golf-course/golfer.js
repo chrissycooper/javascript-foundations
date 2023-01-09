@@ -34,7 +34,7 @@ class Golfer {
             this.frustration -= 10;
         } else if (num < 0) {
             this.frustration = 0;
-        };
+        }
 
         if(this.frustration === 0) {
             return 'I AM THE GREATEST GOLFER ALIVE!';
