@@ -29,11 +29,7 @@ class Magician {
         } else {
             return 'WOW! The magician totally just sawed that person in half!'
         }
-    }
-
-
-
-
+    };
 }
 
 module.exports = Magician;

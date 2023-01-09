@@ -10,6 +10,7 @@ class Ogre {
         if(humanObj.encounterCounter % 3 === 0){
             this.swings++;
         } 
+
         if(this.swings === 2) {
             humanObj.knockedOut = true;
         }
@@ -22,6 +23,6 @@ class Ogre {
     apologize(humanObj) {
         humanObj.knockedOut = false;
     }
-}
+};
 
 module.exports = Ogre;
