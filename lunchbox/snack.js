@@ -15,13 +15,7 @@ class Snack {
   }
 
   checkForHealthy(){
-    if(this.type.includes('Fruit')){
-      return true
-    } else if (this.type.includes('fruit')) {
-      return true
-    } else {
-      return false;
-    }
+   return this.type.toLowerCase().includes('fruit') ? true : false;
   }
 }
 
